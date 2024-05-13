@@ -6,12 +6,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="src/styles/styles.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Landing Page</title>
 </head>
 <body>
     <header>
         <nav id="navbar">
-            <i class="fa-solid fa-burger" id="nav_logo"> food</i>
+            <a href="#home">
+                <i class="fa-solid fa-burger" id="nav_logo"> food</i>
+            </a>
 
             <ul id="nav_list">
                 <li class="nav-item active">
@@ -63,11 +66,11 @@
                 </h1>
 
                 <p class="description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                    Explore sabores globais em cada mordida. Experimente agora no Burguer Food
                 </p>
 
                 <div id="cta_buttons">
-                    <a href="#" class="btn-default">
+                    <a href="#menu" class="btn-default">
                         Ver cardápio
                     </a>
 
@@ -112,11 +115,11 @@
                     <img src="src/images/dish.png" class="dish-image" alt="">
 
                     <h3 class="dish-title">
-                        Lorem Ipsum
+                        Camarão Fusion Crunch
                     </h3>
 
                     <span class="dish-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Delicioso mix de camarão, frango crocante e cebola roxa.
                     </span>
 
                     <div class="dish-rate">
@@ -125,11 +128,11 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <span>(500+)</span>
+                        <span>(391+)</span>
                     </div>
 
                     <div class="dish-price">
-                        <h4>R$20,00</h4>
+                        <h4>R$29,90</h4>
                         <button class="btn-default">
                             <i class="fa-solid fa-basket-shopping"></i>
                         </button>
@@ -144,11 +147,11 @@
                     <img src="src/images/dish2.png" class="dish-image" alt="">
 
                     <h3 class="dish-title">
-                        Lorem Ipsum
+                        Frango Melt Toastie
                     </h3>
 
                     <span class="dish-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Pão de forma com frango desfiado e queijo derretido.
                     </span>
 
                     <div class="dish-rate">
@@ -157,11 +160,11 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <span>(500+)</span>
+                        <span>(678+)</span>
                     </div>
 
                     <div class="dish-price">
-                        <h4>R$20,00</h4>
+                        <h4>R$14,90</h4>
                         <button class="btn-default">
                             <i class="fa-solid fa-basket-shopping"></i>
                         </button>
@@ -176,11 +179,11 @@
                     <img src="src/images/dish3.png" class="dish-image" alt="">
 
                     <h3 class="dish-title">
-                        Lorem Ipsum
+                        Fruit Fusion Delight
                     </h3>
 
                     <span class="dish-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Kiwi fresco e morangos suculentos em harmonia doce.
                     </span>
 
                     <div class="dish-rate">
@@ -189,11 +192,11 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <span>(500+)</span>
+                        <span>(217+)</span>
                     </div>
 
                     <div class="dish-price">
-                        <h4>R$20,00</h4>
+                        <h4>R$19,90</h4>
                         <button class="btn-default">
                             <i class="fa-solid fa-basket-shopping"></i>
                         </button>
@@ -208,11 +211,11 @@
                     <img src="src/images/dish4.png" class="dish-image" alt="">
 
                     <h3 class="dish-title">
-                        Lorem Ipsum
+                        Yakisoba Veggie Delight
                     </h3>
 
                     <span class="dish-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Yakisoba com tomates cereja e vegetais frescos e crocantes.
                     </span>
 
                     <div class="dish-rate">
@@ -221,11 +224,11 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
-                        <span>(500+)</span>
+                        <span>(424+)</span>
                     </div>
 
                     <div class="dish-price">
-                        <h4>R$20,00</h4>
+                        <h4>R$24,90</h4>
                         <button class="btn-default">
                             <i class="fa-solid fa-basket-shopping"></i>
                         </button>
@@ -251,7 +254,7 @@
 
                         <div class="feedback-content">
                             <p>
-                                Fulana de Tal
+                                <strong>Ana</strong>
                                 <span>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -261,7 +264,7 @@
                                 </span>
                             </p>
                             <p>
-                                "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat voluptatibus cumque dolor ea est quae alias necessitatibus"
+                                "Incrível! O Yakisoba Veggie Delight é uma explosão de sabores frescos."
                             </p>
                         </div>
                     </div>
@@ -271,7 +274,7 @@
 
                         <div class="feedback-content">
                             <p>
-                                Fulana de Tal
+                                <strong>Pedro</strong>
                                 <span>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -281,7 +284,7 @@
                                 </span>
                             </p>
                             <p>
-                                "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat voluptatibus cumque dolor ea est quae alias necessitatibus"
+                                "O Frango Melt Toastie é divino, derretendo na boca. Voltaremos."
                             </p>
                         </div>
                     </div>

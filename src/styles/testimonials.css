@@ -48,6 +48,7 @@
 .feedback-content p {
     display: flex;
     justify-content: space-between;
+    padding-top: 3px;
 }
 
 .feedback-content p span {
